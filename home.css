@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 450px; /* Increase spacing between images */
+    margin: 20px;
+}
+
+
+
+.product {
+    text-align: center;
+    width: 269px;
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    font-size: 15px;
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+
+.product img {
+    width: 400px;
+    height: 400px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    align-items: left  ;
+}
+.sell {
+    font-weight: bold;
+    color: green; 
+    margin-left: 10px;
+    font-size: 14px; 
+    text-decoration: none;
+}
+
+a span.sell {
+    text-decoration: none !important; 
+}
+.sale {
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: line-through
+
+
+}
+.product p {
+    margin: 5px 0;
+   
+}
+.price {
+    font-weight: bold;
+    color: black;
+}
+
+.EXCELLENCE {
+    color: black;
+}
+.LAW {
+    color: black;
+}
+
+.product p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px; /* Add spacing between price and "Sold out" */
+    margin: 5px 0;
+}
+
+.sold-out {
+    position: absolute; /* Position relative to the .product container */
+    top: 10px; /* Adjust to position the badge vertically */
+    right: 10px; /* Adjust to position the badge horizontally */
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.product {
+    position: relative; /* Ensure the badge is positioned relative to the product container */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the text and image */
+    text-align: center;
+    position: relative; /* Ensure the "Sold out" badge is positioned correctly */
+    width: 400px; /* Match the image width */
+}
+.sale-badge {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+.sell {
+    font-weight: bold;
+    color: green; 
+    margin-left: 10px; 
+    font-size: 14px;
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 10px 0; 
+    height: 70px;
+  
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    backdrop-filter: blur(3px); /* Apply blur effect */
+  }
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.collection {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    justify-content: center; /* Center the images horizontally */
+    gap: 40x; /* Adjust spacing between images */
+    margin: 20px;
+}
+
+.product {
+    flex: 0 0 auto; /* Prevent the product from shrinking or growing */
+    text-align: center;
+    width: 269px;
+}

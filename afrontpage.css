@@ -1,0 +1,57 @@
+
+.container {
+  font-family: "FjallaOn", sans-serif; /* Sets the font family to Fjalla One */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100%; /* Ensure the container takes up the full height of the parent */
+    font-family: "Fjalla On", sans-serif; /* Sets the font family to Fjalla One */
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure the text appears above the image or video */
+    text-orientation: mixed; /* Ensures words stay upright */
+    white-space: pre-line; /* Allows line breaks for stacking words */
+    text-align: center; /* Centers the text horizontally */
+    color: black;
+    font-family: fjallaOn, sans-serif; /* Sets the font family to Fjalla One */
+}
+
+.logo  {
+    width: 2520px;;
+    height: 100vh;
+    border-radius: 0px;
+    align-items: left  ;
+    gap: 0px;
+    float: left;
+
+  padding: 0px;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    font-family: "FjallaOn", sans-serif; /* Sets the font family to Fjalla One */
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes the underline from links */   
+    font-size: 30px;
+}
+
+
+
+.Main .centered p{
+
+  font-family: "FjallaOn", sans-serif;
+}
+
